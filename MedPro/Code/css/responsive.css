@@ -1,0 +1,336 @@
+@media(max-width:992px){
+    .container{
+        max-width: 700px;
+    }
+}
+/* ====================== Header Section ==================== */
+@media(max-width:992px){
+    .header-container{
+        max-width: 900px;
+    }
+    .header-box-center{
+        display: none;
+    }
+    .call-hidden{
+        display: none;
+    }
+}
+
+/* ===================== Banner Section ==================== */
+@media(max-width:992px){
+    .banner-section{
+        padding-top: 40px;
+    }
+    .banner-section .row .col-6{
+        width: 100%;
+    }
+    .banner-data{
+        margin-bottom: 70px;
+    }
+    .banner-data h1{
+        max-width: 550px;
+    }
+    .doctor-img{
+        width: 380px;
+        margin: 0 auto;
+    }
+    .banner-img-circle{
+        width: 460px;
+        height: 460px;
+        top: -50px;
+        left: 60px;
+    }
+    .banner-floating-box{
+        top:-20px;
+        left: 40px;
+    }
+}
+
+/* ===================== Health Section =================== */
+@media(max-width:992px){
+    .health-section{
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .health-heading{
+        display: block;
+    }
+    .health-heading h2{
+        max-width: 550px;
+        margin-bottom: 20px;
+    }
+    .health-section .row .col-4{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .health-img-box{
+        margin-top: 160px;
+        margin-left: 0px;
+    }
+}
+
+/* ======================= Service Section ================ */
+
+@media(max-width:992px){
+    .service-section{
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    .service-desc img{
+        width: 85px;
+        height: 85px;
+        padding: 24px;
+        margin: 0 17px;
+    }
+    .service-desc p{
+        font-size: 13px;
+    }
+    .service-logo{
+        padding-bottom: 40px;
+    }
+}
+
+/* ==================== Treatment Section =================== */
+
+@media(max-width:992px){
+    .treatment-section{
+        padding-top: 30px;
+        padding-bottom: 80px;
+    }
+    .treatment-section .col-6{
+        width: 100%;
+    }
+    .treatment-section .col-6:first-child{
+        order: 1;
+        display: flex;
+    }
+    .treatment-data{
+        margin-bottom: 70px;
+    }
+    .treatment-box{
+        margin: 0;
+    }
+}
+
+/* =================== Health Checkup Section =============== */
+
+@media(max-width:992px){
+    .health-checkup-section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .health-checkup-section .col-5{
+        width: 80%;    
+    }
+    .checkup-data{
+        margin-top: 40px;
+    }
+}
+
+/* ==================== Patient Section ==================== */
+
+@media(max-width:992px){
+    .patient-section .col-4{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .patient-section .col-4:last-child{
+        display: flex;
+        order: -1;
+    }
+}
+
+/* ==================== Appointment Section ============== */
+
+@media(max-width:992px){
+    .appointment-section{
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    .appointment-section .col-6{
+        width: 100%;
+    }
+    .appoin-desc{
+        margin-bottom: 60px;
+    }
+    .appoin-form-box{
+        margin: 0px 10px 0px 50px;
+        /* width: 100%; */
+    }
+}
+
+/* =================== Footer Section ==================== */
+
+@media(max-width:992px){
+    .footer-section .col-3{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .footer-btn{
+        width:295px;
+    }
+    .footer-section .col-9{
+        width: 100%;
+    }
+    .footer-data h6{
+        margin-left: 0;
+    }
+    .footer-data a p{
+        margin-left: 0;
+    }
+}
+
+/* =================== 768PX ==================== */
+
+/* ====================== Header Section ================ */
+@media(max-width:768px){
+    .header-top{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .header-top-left,.header-top-right{
+        display: none;
+    }
+    .header-box{
+        width: 700px;
+        margin: 0 auto;
+        height: 70px;
+    }
+}
+
+/* ================ Banner Section =================== */
+@media(max-width:768px){
+    .banner-data{
+        margin-top: 45px;
+    }
+    .banner-data h1{
+        font-size: 43px;
+        line-height: 56px;
+        margin-bottom: 50px;
+    }
+    .doctor-img{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .banner-floating-box{
+        display: block;
+        padding: 10px 25px;
+    }
+    .banner-floating-box img{
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    .banner-floating-box p{
+        max-width: 180px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .banner-img-circle{
+        width: 400px;
+        height: 400px;
+        left: 80px;
+    }
+}
+
+/* ===================== Health Section ================ */
+
+@media(max-width:768px){
+    .health-heading h2{
+        font-size: 31px;
+        max-width: 650px;
+        line-height: 42px; 
+    }
+}
+
+/* ================== Service Section ================== */
+
+@media(max-width:768px){
+    .service-section{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .service-heading h2{
+        font-size: 31px;
+        line-height: 42px;
+    }
+    .service-logo{
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+}
+
+/* ================== Treatment Section ================= */
+
+@media(max-width:768px){
+    .treatment-data h2{
+        font-size: 31px;
+        line-height: 42px;
+    }
+}
+
+/* ================== Health Checkup Section ============= */
+
+@media(max-width:768px){
+    .checkup-heading h2{
+        font-size: 31px;
+        line-height: 42px;
+    }
+    .checkup-box{
+        max-width: 430px;
+    }
+    .checkup-data img{
+        width: 50px;
+    }
+    .checkup-data h3{
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+/* ================== Appointment Section ==================== */
+@media(max-width:768px){
+    .appoin-desc{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .appoin-desc h2{
+        font-size: 31px;
+        line-height: 42px;
+    }
+    .appoin-form-box{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* =================== Footer Section ====================== */
+
+@media(max-width:768px){
+    .footer-data{
+        display: block;
+    }
+    .footer-list{
+        margin-bottom: 50px;
+    }
+    .footer-bottom{
+        display: block;
+        text-align: center;
+    }
+    .footer-left{
+        margin-bottom: 20px;
+    }
+}
+
+/* ================== 568px =============== */
+
+/* ============ header section ======== */
+
+@media(max-width:568px){
+    .container{
+        max-width: 550px;
+    }
+    
+}
