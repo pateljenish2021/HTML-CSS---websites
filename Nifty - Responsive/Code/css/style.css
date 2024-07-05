@@ -1,0 +1,226 @@
+:root{
+    --bg-color: #0c0324;
+    --white:#fff;
+    --purple:#ab17df;
+    --text:#FFFFFF99;
+}
+
+/* ============================ Common CSS ========================== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+    display:block;
+}
+a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+}
+body{
+    color:var(--black);
+    font-family: 'Rajdhani';
+}
+/* ============= Component ==================== */
+.btn{
+    padding: 8px 16px;
+    font-weight: 600;
+    line-height: 23px;
+    font-size: 18px;
+    color: var(--white);
+    background-image: linear-gradient(90deg, #4E10FF 0%, #AB17DF 100%);
+    border-radius: 3px;
+    border: 0;
+    background-color: transparent;
+}
+button i{
+    margin-left: 15px;
+}
+/* =============== CSS ================= */
+
+/* ====== Header ==== */
+.navbar{
+    background-color: var(--bg-color);
+    border-bottom: 1px solid #FFFFFF33;
+}
+.header-center ul li{
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 32px 30px 32px 0px;
+}
+.header-center ul li a{
+    color: var(--white);
+    transition: all 0.1s;
+    padding-bottom: 4px;
+    font-weight: 600;
+    line-height: 23px;
+    font-size: 18px;
+}
+.header-center ul li a:hover{
+    border-bottom: 2px #ab17df solid;
+    color: var(--purple);
+}
+.header-center ul li a:hover{
+    color: #ab17df;
+}
+.header-center ul .active{
+    padding-bottom: 4px;
+    border-bottom: 2px #ab17df solid;
+    color: var(--purple);
+}
+.header-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======== Banner ========== */
+
+.banner{
+    background-color: var(--bg-color);
+    padding: 100px 0 0 0;
+    position: relative;
+    border-bottom: 1px solid #FFFFFF33;
+}
+.banner-bg{
+    background-image: url(../images/bg-img.png);
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: 0px -80px;
+    top: 0;
+    left: 0;
+    background-size: 100% auto;
+}
+.banner-data h1{
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 82px;
+    color: var(--white);
+    margin-bottom: 35px;
+}
+.banner-data p{
+    color: var(--text);
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 35px;
+    width: 80%;
+    font-family: 'Nunito Sans';
+}
+.banner-data .btn{
+    padding: 16px 32px;
+}
+.banner-data .learn-btn{
+    background-image: none;
+    padding: 16px 32px;
+    border: 1px solid #ffffff99;
+    color: #ffffff99;
+    margin-left: 30px;
+}
+.banner-bottom{
+    width: 90%;
+}
+.banner-bottom .col-lg-4{
+    border-right: 1px solid #FFFFFF33;
+    height: 77px;
+    margin-top: 78px;
+}
+.banner-bottom .col-lg-4:last-child{
+    border-right: none;
+}
+.banner-b-data h4{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: var(--white);
+}
+.banner-b-data p{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    color: var(--text);
+}
+.banner-img{
+    margin-left: auto;
+}
+.banner-img img{
+    border-radius: 8px;
+    /* width: 81%; */
+}
+
+/* ========= Partners ======== */
+.partner{
+    background-color: #0c0324;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.partner-heading h5{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    color: var(--white);
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.p-logo{
+    padding-bottom: 120px;
+    width: 100%;
+}
+.p-logo img{
+    opacity: 0.3;
+}
+.p-data h6{
+    color: #fead10;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.p-data h2{
+    font-size: 75px;
+    line-height: 75px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 32px;
+}
+.p-data p{
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--text);
+    font-family: 'Nunito Sans';
+    margin-bottom: 32px;
+}
+.p-data .btn{
+    padding: 16px 32px;
+}
+.p-img img{
+    width: 90%;
+    border-radius: 8px;
+}
+.p-img-box{
+    background-color: #0C032480;
+    padding: 24px 32px 24px 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    color: var(--white);
+    bottom: 7%;
+    left: 7%;
+    width: 77%;
+    border-radius: 8px;
+}
