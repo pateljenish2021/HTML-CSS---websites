@@ -1,0 +1,212 @@
+@media(max-width:1050px){
+    .footer-container{
+        max-width: 930px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .profile-img{
+        padding-left: 5px;
+    }
+}
+@media(max-width:992px){
+    .container{
+        max-width:690px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .intro-section .col-sm-12{
+        display: flex;
+    }
+    .profile-social a{
+        margin: 0 8px;
+    }
+    .profile-social a i{
+        font-size: 22px;
+    }
+    .project-btn .btn-2{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+    .f-logo a{
+        padding: 7px 18px;
+    }
+}
+
+@media(max-width:767px){
+    .container{
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    /* === intro === */
+
+    .intro-section{
+        padding-top: 40px;
+    }
+    .profile-img img{
+        width: 60px;
+    }
+    .intro-section .col-sm-12{
+        display: flex;
+    }
+    .profile-name h2{
+        font-size: 28px;
+        line-height: 31px;
+    }
+    .profile-name p{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .profile-social{
+        padding-top: 25px;
+    }
+    .profile-info p{
+        font-size: 18px;
+        line-height: 25px;   
+    }
+    .quick-intro{
+        margin-bottom: 60px;
+    }
+    /* ==== Project === */
+    .project-heading{
+        font-size: 28px;
+        line-height: 39px;
+    }
+    .project-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;    
+    }
+    .project-section .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .project-data p{
+        max-width: 100%;
+    }
+    .project-btn .btn{
+        width: 100%;
+    }
+    .project-btn .btn-2{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    /* === tools === */
+    .tool-section{
+        padding-bottom: 30px;
+    }
+    .tool-heading h2{
+        font-size: 28px;
+        line-height: 39px;
+    }
+    .tool-heading-box{
+        padding: 4px 20px;
+        font-size: 16px;
+        line-height: 22.4px;
+        margin-top: 0;
+    }
+    .tool-logo .logo img{
+        width: 48px;
+        height: 48px;
+    }
+    .tool-logo{
+        margin-left: 25px;
+    }
+    .tool-logo .logo{
+        padding-right: 25px;
+        padding-top: 20px;
+    }
+    .tools-1, .tools-2, .tools-3{
+        margin-bottom: 40px;
+    }
+    
+    /* ==== Footer ==== */
+    footer{
+        height: 280px;
+        padding: 30px 0px;
+    }
+    .footer-data{
+        display: block;
+    }
+    .f-name h5{
+        padding-left: 23px;
+    }
+    .f-social{
+        display: block;
+        margin-top: 20px;
+    }
+    .f-logo{
+        margin-bottom: 20px;
+    }
+    .f-logo a:hover{
+        background-color: transparent;
+        border-radius: 0px;
+        border: 0px;
+    }
+}
+@media(max-width:568px){
+    .container{
+        max-width: 470px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+@media(max-width:480px){
+    .container{
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 390px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+@media(max-width:430px){
+    .container{
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 380px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+@media(max-width:380px){
+    .container{
+        max-width: 330px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 330px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+@media(max-width:300px){
+    .container{
+        max-width: 240px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .footer-container{
+        max-width: 270px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
