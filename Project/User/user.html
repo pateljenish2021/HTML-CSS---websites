@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User - The Minimalist</title>
+  <link rel="icon" href="../img/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class='header'>
+    <button class="logout-btn" onclick="logout()"><span class="text-underline"><img src="../img/exit.png" alt="">Logout</span></button>
+    <div class='title'>
+      <h4>The Minimalist</h4> 
+    </div>
+    <button class="cart-btn" onclick="gotoCart()"><span class="text-underline"><img src="../img/shopping-cart (1).png" alt="">cart</span></button>
+  </div>
+  <div class="heading">Products</div>
+  <div class="container">
+    <div class="products">
+      <div class="row" id="row"></div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+</script>
+<script>
+  let products = JSON.parse(localStorage.getItem("products"));
+  let filterproduct = products.filter((val) => val.isActive == true);
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let row = document.getElementById("row");
+  console.log(products);
+
+  function loadProduct() {
+    filterproduct.map((val, index) => {
+      let div = document.createElement("div");
+      div.className = "col-md-3";
+      div.innerHTML = `
+          <h5>${val.productName}</h5>
+            <img class="product-img" src="${val.img}" alt="">
+            <div class="price-data">
+              <h4>$ ${val.price}</h4>
+              <button onclick="addtoCart(${index})">
+                <img class="cart-img" src="../img/shopping-cart.png" alt="">
+              </button>
+            </div>
+            <p>${val.desc}</p>
+       `;
+      row.appendChild(div);
+    });
+  }
+
+  loadProduct();
+
+  let addtoCart = (index) => {
+    console.log(index);
+
+    let result = filterproduct[index];
+
+    console.log(result);
+
+    cart.push(result);
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+  };
+  function logout(){
+    window.location.href = "../login.html";
+  }
+  function gotoCart(){
+    window.location.href="cart.html";
+  }
+</script>
+</html>

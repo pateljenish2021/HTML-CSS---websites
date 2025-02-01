@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/shopping-trolleys-packets-tags.png");
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat; 
+}
+
+.form-container {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.434);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 150px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-container h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.form-container input, .form-container button{
+    background-color: transparent;
+    display: block;
+    border: 1.5px solid rgba(255, 255, 255, 0.231);
+    padding: 10px 17px;
+    border-radius: 20px;
+    width: 220px;
+    margin-bottom: 13px;
+    color: white;
+}
+.form-container input:focus-visible{
+    outline: none;
+}
+.form-container input::placeholder{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form-container button{
+    width: 260px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.link a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.link a span{
+    text-decoration: underline;
+}
+.form-container img{
+    width: 14px;
+    height: 14px;
+    position: absolute;
+}
+.r-user-img{
+    top: 31%;
+    right: 17%;
+}
+.r-pass-img{
+    top: 45%;
+    right: 17%;  
+}
+.form-container .r-role-img{
+    top: 59%;
+    right: 16%;  
+    width: 18px;
+    height: 18px;
+}
+.l-user-img{
+    top: 36%;
+    right: 17%;
+}
+.l-pass-img{
+    top: 53%;
+    right: 17%;  
+}

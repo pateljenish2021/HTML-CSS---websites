@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - The Minimalist</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="register-container"> 
+        <div class="form-container">
+            <h2>Register</h2>
+            <input type="text" id="reg-username" placeholder="Username" required>
+            <img src="img/user.png" class="r-user-img" alt="">
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <img src="img/padlock.png" class="r-pass-img" alt="">
+            <input type="text" id="reg-role" placeholder="Role (user/admin)" required>
+            <img src="img/human-resources.png" class="r-role-img" alt="">
+            <button onclick="register()">Register</button>
+            <div class="link">
+                <a href="#" onclick="showLogin()">Already have an account?<span> Login here</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="login-container" style="display:none;">
+        <div class="form-container">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <img src="img/user.png" class="l-user-img" alt="">
+            <input type="password" id="login-password" placeholder="Password" required>
+            <img src="img/padlock.png" class="l-pass-img" alt="">
+            <button onclick="login()">Login</button>
+            <div class="link">
+                <a href="#" onclick="showRegister()">Don't have an account? <span>Register here</span></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Show the registration form
+        function showRegister() {
+            document.getElementById('register-container').style.display = 'block';
+            document.getElementById('login-container').style.display = 'none';
+        }
+
+        // Show the login form
+        function showLogin() {
+            document.getElementById('register-container').style.display = 'none';
+            document.getElementById('login-container').style.display = 'block';
+        }
+
+        // Register a new user
+        function register() {
+            const username = document.getElementById('reg-username').value;
+            const password = document.getElementById('reg-password').value;
+            const role = document.getElementById('reg-role').value;
+
+            if (username === '' || password === '' || role === '') {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+
+            const existingUser = users.find(user => user.username === username);
+            if (existingUser) {
+                alert('Username already exists');
+                return;
+            }
+
+            users.push({ username, password, role });
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Registration successful');
+            showLogin();
+        }
+
+        // Login 
+        function login() {
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+
+                if (username === '' || password === '') {
+                    alert('Please fill in all fields');
+                    return;
+                }
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                // alert(`Login successful as ${user.role}`);
+                window.location.href = user.role === 'admin' ? 'admin/admin.html' : 'user/user.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+
+    </script>
+</body>
+
+</html>
